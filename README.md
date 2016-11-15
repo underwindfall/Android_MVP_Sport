@@ -8,7 +8,9 @@ A Personal Project for practicing `MVP`
 ##Other Informations
 Compatibility information:Android API de 18 à 23, soit des versions 4.4 à 6.0
 
+
 ####ChangleLog
+
 ###2016/11/10
 Prototype interface for LogIn and SignUp
 ###2016/11/15
