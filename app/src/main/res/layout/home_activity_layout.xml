@@ -51,7 +51,7 @@
             android:paddingTop="10dp" />
 
         <RadioButton
-            android:id="@+id/btn_preson"
+            android:id="@+id/btn_person"
             style="@style/radio_button_style"
             android:drawableTop="@drawable/bottom_tag_person_info"
             android:paddingTop="10dp" />

@@ -1,5 +1,6 @@
 package com.sport.qifan.sport.views.fragment.agenda;
 
+import com.sport.qifan.sport.R;
 import com.sport.qifan.sport.views.BaseFragment;
 
 /**
@@ -9,7 +10,7 @@ import com.sport.qifan.sport.views.BaseFragment;
 public class AgendaFragment extends BaseFragment {
     @Override
     public int getLayoutId() {
-        return 0;
+        return R.layout.agenda_fragment_layout;
     }
 
     @Override

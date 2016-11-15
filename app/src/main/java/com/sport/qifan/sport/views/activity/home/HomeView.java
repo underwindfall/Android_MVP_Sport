@@ -1,5 +1,8 @@
 package com.sport.qifan.sport.views.activity.home;
 
+import android.content.Context;
+import android.view.View;
+import android.widget.PopupWindow;
 import android.widget.RadioButton;
 
 /**
@@ -16,4 +19,14 @@ public interface HomeView {
     RadioButton getCheckedBtn(int position);
 
     void goToCreateEventActivity();
+
+    View initPopupView();
+
+    void setBackGroundAlpha(float v);
+
+    void showPopupWindow(PopupWindow popupWindow);
+
+    void goToChoseSports();
+
+    Context getContext();
 }

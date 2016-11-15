@@ -1,5 +1,6 @@
 package com.sport.qifan.sport.views.fragment.friendrequest;
 
+import com.sport.qifan.sport.R;
 import com.sport.qifan.sport.views.BaseFragment;
 
 /**
@@ -9,7 +10,7 @@ import com.sport.qifan.sport.views.BaseFragment;
 public class FriendRequestFragment extends BaseFragment {
     @Override
     public int getLayoutId() {
-        return 0;
+        return R.layout.friendrequest_fragment_layout;
     }
 
     @Override

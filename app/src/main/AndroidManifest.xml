@@ -20,6 +20,8 @@
         <activity android:name=".views.activity.home.HomeActivity"
             android:screenOrientation="portrait"
             android:launchMode="singleTask"/>
+        <activity android:name=".views.activity.choiceofsports.ChooseSportsActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
