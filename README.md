@@ -1,9 +1,9 @@
 # Android_MVP_Sport
 A Personal Project for practicing `MVP` 
-<h1>External libraries used</h1>
+##External libraries used
 -[Volley Utils](https://github.com/johnjohndoe/Volley):Volley is an HTTP library that makes networking for Android apps easier and most importantly, faster. Volley is available through the open AOSP repository
 -[ButterKnife](https://github.com/JakeWharton/butterknife):Field and method binding for Android views which uses annotation processing to generate boilerplate code for you.
-<h1>Other Informations</h1>
+##Other Informations
 Compatibility information:Android API de 18 à 23, soit des versions 4.4 à 6.0
-<h3>2016/11/10</h3>
+###2016/11/10</h3>
 Prototype interface for LogIn And SignUp
