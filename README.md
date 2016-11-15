@@ -9,7 +9,7 @@ A Personal Project for practicing `MVP`
 Compatibility information:Android API de 18 à 23, soit des versions 4.4 à 6.0
 
 ####Change Log
-###2016/11/10
+- 2016/11/10
 Prototype interface for LogIn and SignUp
-###2016/11/15
+- 2016/11/15
 Prototype interface for HomeActiviy and HomeFragment, This time I use buttonPen for showing a PopWindow
