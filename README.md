@@ -10,6 +10,6 @@ Compatibility information:Android API de 18 à 23, soit des versions 4.4 à 6.0
 
 ####Change Log
 * 2016/11/10
- * Prototype interface for LogIn and SignUp
+ * Prototype interface of LogIn and SignUp
 * 2016/11/15
- * Prototype interface for HomeActiviy and HomeFragment, This time I use buttonPen for showing a PopWindow
+ * Prototype interface of HomeActiviy and correct for the usage of ViewPager, This time I use buttonPen for showing a PopWindow
