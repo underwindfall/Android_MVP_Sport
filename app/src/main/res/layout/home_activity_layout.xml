@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mToolbar="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_home_activity_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"></android.support.v4.view.ViewPager>
+
+    <com.sport.qifan.sport.custome.CommonHeadView
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        mToolbar:tbBackground="@color/colorPrimary"
+        mToolbar:tbImgLeft="@drawable/left_btn"
+        mToolbar:tbImgRight="@drawable/right_btn"
+        mToolbar:tbInfoLeftVisiable="false"></com.sport.qifan.sport.custome.CommonHeadView>
+
+    <RadioGroup
+        android:id="@+id/rg_home_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <RadioButton
+            android:id="@+id/btn_home"
+            style="@style/radio_button_style"
+            android:drawableTop="@drawable/bottom_tag_home"
+            android:paddingTop="10dp" />
+
+        <RadioButton
+            android:id="@+id/btn_calendar"
+            style="@style/radio_button_style"
+            android:layout_marginRight="30dp"
+            android:drawableTop="@drawable/bottom_tag_agenda"
+            android:paddingTop="10dp" />
+
+        <RadioButton
+            android:id="@+id/btn_news"
+            style="@style/radio_button_style"
+            android:layout_marginLeft="30dp"
+            android:drawableTop="@drawable/bottom_tag_news"
+            android:paddingTop="10dp" />
+
+        <RadioButton
+            android:id="@+id/btn_preson"
+            style="@style/radio_button_style"
+            android:drawableTop="@drawable/bottom_tag_person_info"
+            android:paddingTop="10dp" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/btn_creat_event"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/btn_drak_primary_color"
+        android:button="@null"
+        android:padding="5dp"
+        android:src="@drawable/bottom_tag_creat_event" />
+</RelativeLayout>
