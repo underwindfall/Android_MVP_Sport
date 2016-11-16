@@ -1,7 +1,7 @@
 # Android_MVP_Sport
 A Personal Project for practicing `MVP` 
 ##User Interface
-![APP Interface](https://github.com/underwindfall/Android_MVP_Sport/tree/master/app/src/main/res/doc/ScreenShots.jpeg)
+![APP Interface](https://github.com/underwindfall/Android_MVP_Sport/tree/master/app/src/main/res/doc/)
 
 ##External libraries used
 - [Volley Utils](https://github.com/johnjohndoe/Volley):Volley is an HTTP library that makes networking for Android apps easier and most importantly, faster. Volley is available through the open AOSP repository<br>
