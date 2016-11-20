@@ -90,7 +90,6 @@ public class HomeActivity extends BaseActivity implements HomeView {
         mfragmentList = new ArrayList<>();
         mfragmentList.add(new HomeFragment());
         mfragmentList.add(new AgendaFragment());
-        mfragmentList.add(new FriendRequestFragment());
         mfragmentList.add(new NewsFragment());
         mfragmentList.add(new PersonInfoFragment());
     }

@@ -3,9 +3,10 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">#607D8B</item>
+        <item name="colorPrimaryDark">#455A64</item>
+        <item name="colorAccent">#B6B6B6</item>
+        <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
@@ -20,6 +21,7 @@
         <item name="android:orientation">vertical</item>
         <item name="android:showDividers">middle</item>
     </style>
+
     <style name="login_edittext_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
@@ -28,6 +30,7 @@
         <item name="android:padding">10dp</item>
         <item name="android:textSize">20dp</item>
     </style>
+
     <style name="login_button_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -91,5 +94,6 @@
         <item name="android:windowExitAnimation">@anim/popupwindow_hidden_anim</item>
         <!-- 指定消失的动画xml -->
     </style>
-
+    <!--Style for Interface NewsDetail-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 </resources>

@@ -24,6 +24,7 @@ public class ChooseSportsPresenter {
     //events are chosen
     private List<SportEvents> sportEventsChosen;
     private int totalEvents = 0;
+
     public ChooseSportsPresenter(ChooseSportsView view) {
         this.mView = view;
     }
@@ -51,8 +52,39 @@ public class ChooseSportsPresenter {
         sportEvents.add(new SportEvents(R.drawable.swimming, "swimming"));
         sportEvents.add(new SportEvents(R.drawable.exercise, "exercise"));
         sportEvents.add(new SportEvents(R.drawable.boxing, "boxing"));
-        totalEvents=sportEvents.size();
+        //返回最大的totalEvents_Sports
+        totalEvents = sportEvents.size();
         //初始化爱好ViewPager及其下方的圆点
         mView.initGirdViewsAndPoints();
+    }
+
+    /**
+     * get number of events total
+     */
+    public int getTotalEvents() {
+        return totalEvents;
+    }
+
+    public List<SportEvents> getSportEvents() {
+        return sportEvents;
+    }
+
+    /**
+     * add Choose Event
+     * @param item
+     */
+    public void addChooseEvent(SportEvents item) {
+        sportEventsChosen.add(item);
+        mView.refreshEventChoose(sportEventsChosen);
+
+    }
+    /**
+     * remove Choose Event
+     * @param item
+     */
+    public void removeChooseEvent(SportEvents item) {
+        sportEventsChosen.remove(item);
+        mView.refreshEventChoose(sportEventsChosen);
+
     }
 }
