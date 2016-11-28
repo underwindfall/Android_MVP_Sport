@@ -1,10 +1,12 @@
 package com.sport.qifan.sport.model.module;
 
+import java.io.Serializable;
+
 /**
  * Created by qifan on 2016/11/16.
  */
 
-public class SportEvents {
+public class SportEvents implements Serializable {
     //resource id of image
     private int event_image;
     //this item is selected

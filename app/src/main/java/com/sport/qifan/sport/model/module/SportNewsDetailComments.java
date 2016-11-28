@@ -1,10 +1,12 @@
 package com.sport.qifan.sport.model.module;
 
+import java.io.Serializable;
+
 /**
  * Created by qifan on 2016/11/18.
  */
 
-public class SportNewsDetailComments {
+public class SportNewsDetailComments implements Serializable{
     private int user_id;
     private String user_name;
     private String user_comment;
