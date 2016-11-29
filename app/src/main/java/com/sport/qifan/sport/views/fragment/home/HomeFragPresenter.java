@@ -77,5 +77,13 @@ public class HomeFragPresenter {
         });
     }
 
-
+    /**
+     * add function for expanablelist
+     * @param groupPosition
+     * @param childPosition
+     */
+    public void goToEventDetail(int groupPosition, int childPosition){
+        SportsSecondClass item = sportsList.get(groupPosition).getSports().get(childPosition);
+        mView.goToEventDetail(item);
+    }
 }

@@ -1,6 +1,7 @@
 package com.sport.qifan.sport.views.fragment.home;
 
 import com.sport.qifan.sport.model.module.SportsFirstClass;
+import com.sport.qifan.sport.model.module.SportsSecondClass;
 import com.sport.qifan.sport.views.BaseView;
 
 import java.util.List;
@@ -11,4 +12,6 @@ import java.util.List;
 
 public interface HomeFragView extends BaseView {
     void refreshList(List<SportsFirstClass> sportsList);
+
+    void goToEventDetail(SportsSecondClass item);
 }

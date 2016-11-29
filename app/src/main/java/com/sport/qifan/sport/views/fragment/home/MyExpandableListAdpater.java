@@ -122,6 +122,7 @@ public class MyExpandableListAdpater extends BaseExpandableListAdapter {
 
     /**
      * 获取显示指定分组的视图
+     *（类似于ListView的getView方法）,每次加载组列表时都会执行该方法重新绘制页面；
      *
      * @param groupPosition
      * @param isExpanded
@@ -144,6 +145,7 @@ public class MyExpandableListAdpater extends BaseExpandableListAdapter {
 
     /**
      *  获取显示指定分组中的指定子选项的视图
+     *  当展开分组时会调用此方法来绘制当前分组的子项
      * @param groupPosition
      * @param childPosition
      * @param isLastChild
@@ -164,9 +166,15 @@ public class MyExpandableListAdpater extends BaseExpandableListAdapter {
         return convertView;
     }
 
+    /**
+     *  指定位置上的子元素是否可选中
+     * @param groupPosition
+     * @param childPosition
+     * @return
+     */
     @Override
     public boolean isChildSelectable(int groupPosition, int childPosition) {
-        return false;
+        return true;
     }
 
     class GroupViewHolder {

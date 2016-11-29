@@ -24,6 +24,7 @@ import com.sport.qifan.sport.utils.LoggerUtil;
 import com.sport.qifan.sport.utils.ToastUtil;
 import com.sport.qifan.sport.views.BaseActivity;
 import com.sport.qifan.sport.views.activity.choiceofsports.ChooseSportsActivity;
+import com.sport.qifan.sport.views.activity.createvent.CreatEventActivity;
 import com.sport.qifan.sport.views.fragment.agenda.AgendaFragment;
 import com.sport.qifan.sport.views.fragment.friendrequest.FriendRequestFragment;
 import com.sport.qifan.sport.views.fragment.home.HomeFragment;
@@ -258,9 +259,9 @@ public class HomeActivity extends BaseActivity implements HomeView {
 
     @Override
     public void goToCreateEventActivity() {
-        // TODO: 2016/11/15  需要完成CreateEventActivity
-//        Intent intent=new Intent();
-//        intent.setClass(HomeActivity.this,)
+        Intent intent=new Intent();
+        intent.setClass(HomeActivity.this, CreatEventActivity.class);
+        startActivity(intent);
     }
 
     /**

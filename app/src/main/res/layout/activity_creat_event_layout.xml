@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#607D8B"
+    android:orientation="vertical"
+    android:paddingTop="50dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="CREAT AN EVENT"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_create_event_container"
+        style="@style/edittext_container_style"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/title">
+        <EditText
+            android:id="@+id/event_name"
+            style="@style/creat_event_edittext_style"
+            android:drawableLeft="@drawable/event_name"
+            android:hint="Enter the event name"
+            android:drawablePadding="5dp"/>
+        <EditText
+            android:id="@+id/event_time"
+            style="@style/creat_event_edittext_style"
+            android:drawableLeft="@drawable/event_time"
+            android:hint="2016-11-30"
+            android:drawablePadding="5dp"/>
+        <EditText
+            android:id="@+id/event_location"
+            style="@style/creat_event_edittext_style"
+            android:drawableLeft="@drawable/event_lieu"
+            android:hint="Enter the event name"
+            android:drawablePadding="5dp"/>
+        <EditText
+            android:id="@+id/event_person_number"
+            style="@style/creat_event_edittext_style"
+            android:drawableLeft="@drawable/event_persons"
+            android:drawablePadding="5dp"
+            android:hint="Number of person" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_viewpager"
+       android:layout_below="@+id/ll_create_event_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/event_type_container"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="5dp" >
+            </android.support.v4.view.ViewPager>
+            <LinearLayout
+                android:layout_below="@id/event_type_container"
+                android:id="@+id/ll_point_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="15dp" />
+        </LinearLayout>
+    </ScrollView>
+    <EditText
+        android:id="@+id/event_description"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/scroll_viewpager"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/login_et_background"
+        android:gravity="top"
+        android:hint="Description..........."/>
+    <Button
+        android:id="@+id/event_confirm_btn"
+        style="@style/creat_event_button_style"
+        android:layout_below="@id/event_description"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_orange_background"
+        android:text="Confirm" />
+</RelativeLayout>
