@@ -123,7 +123,7 @@ public class NewsFragment extends BaseFragment implements NewFragView {
                 holder.events_like.setSelected(items.get(i).isLiked());
             }
 
-            holder.events_like.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            holder.events_like.setOnCheckedChangeListener(  new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                     if (isChecked) {

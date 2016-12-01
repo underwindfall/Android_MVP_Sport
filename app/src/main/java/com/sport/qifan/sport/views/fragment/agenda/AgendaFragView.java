@@ -1,5 +1,6 @@
 package com.sport.qifan.sport.views.fragment.agenda;
 
+import com.sport.qifan.sport.custome.PersonInfoPopupWindow;
 import com.sport.qifan.sport.views.BaseView;
 
 /**
@@ -7,4 +8,7 @@ import com.sport.qifan.sport.views.BaseView;
  */
 
 public interface AgendaFragView extends BaseView {
+    void setBackGroundAlpha(float v);
+
+    void showPersonInfoPopupWindow(PersonInfoPopupWindow popupWindow);
 }

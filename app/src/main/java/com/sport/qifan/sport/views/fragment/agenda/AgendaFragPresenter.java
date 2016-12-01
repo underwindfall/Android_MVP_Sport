@@ -1,7 +1,9 @@
 package com.sport.qifan.sport.views.fragment.agenda;
 
 import android.content.Context;
+import android.widget.PopupWindow;
 
+import com.sport.qifan.sport.custome.PersonInfoPopupWindow;
 import com.sport.qifan.sport.model.business.VollyRequestManager;
 import com.sport.qifan.sport.model.business.VollyResponse;
 import com.sport.qifan.sport.model.module.AgendaEvents;
@@ -74,4 +76,16 @@ public class AgendaFragPresenter {
     }
 
 
+    public void showPopupWindow() {
+        //获取数据，通过构造函数塞到popupWindow里
+        final PersonInfoPopupWindow popupWindow = new PersonInfoPopupWindow(mContext);
+        popupWindow.setOnDismissListener(new PopupWindow.OnDismissListener() {
+            @Override
+            public void onDismiss() {
+                view.setBackGroundAlpha(1f);
+            }
+        });
+        view.showPersonInfoPopupWindow(popupWindow);
+        view.setBackGroundAlpha(0.55f);
+    }
 }

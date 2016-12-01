@@ -18,3 +18,9 @@ Compatibility information:Android API de 18 à 23, which means versions 4.4 à 6
  * Prototype interface of HomeActiviy and correct for the usage of ViewPager, This time I use buttonPen for showing a PopWindow
 * 2016/11/20
  * Prototype interface of NewsFragment and NewsDetailActivity
+* 2016/11/28
+ * Prototype interface of HomeFragement and ExpandableList
+* 2016/11/29
+ * Prototype interface of CreatEventActivity and EventDetailActivity
+* 2016/12/01
+ * Prototype interface of AgendaFragment（Customize MyProgressBarHorizontal/PersonInfoPopupWindow）	

@@ -105,4 +105,17 @@
     </style>
     <!--Style for Interface NewsDetail-->
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--定制MyProgressBarHorizontal-->
+    <declare-styleable name="MyProgressBarHorizontal">
+        <attr name="reachColor" format="reference|color" />
+        <attr name="unReachColor" format="reference|color" />
+        <attr name="reachHeight" format="dimension" />
+        <attr name="unReachHeight" format="dimension" />
+        <attr name="gradient" format="boolean" />
+        <attr name="gradientStartColor" format="reference|color" />
+        <!--<attr name="gradientMiddleColor" format="reference|color" />-->
+        <attr name="gradientEndColor" format="reference|color" />
+
+    </declare-styleable>
 </resources>
