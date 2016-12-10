@@ -2,8 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <ImageView
+    <Button
+        android:id="@+id/test"
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#55d5d5"/>
+        android:layout_height="wrap_content"
+        android:text="点击跳转进入详细界面"/>
 </LinearLayout>
